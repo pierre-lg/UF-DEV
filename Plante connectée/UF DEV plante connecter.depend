@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1546951112 source:c:\users\mme keita\desktop\ynov\uf dev plante connecter\main.c
+	<stdio.h>
+	<stdlib.h>
+	"code.h"
+
+1547125469 c:\users\mme keita\desktop\ynov\uf dev plante connecter\code.h
+
+1548162596 source:c:\users\mme keita\desktop\ynov\uf dev plante connecter\code.c
+	<stdio.h>
+	<unistd.h>
+	<stdlib.h>
+	<windows.h>
+
