@@ -1,0 +1,139 @@
+set echo on
+
+drop table Plante cascade constraint;
+drop table dernier_Entretien cascade constraint;
+drop table Utilisateur cascade constraint;
+
+
+create table Utilisateur
+(
+id_Utilisateur        integer        not null,
+nom_Utilisateur       char(10)       not null,
+Prénom                char(10)       null    ,
+Localisation          char(20)       not null,
+constraint pk_Utilisateur primary key(id_Utilisateur)
+)
+;
+
+create table Plante 
+(
+id_Plante        integer         not null,
+nom_Plante       char(10)        not null,
+Categorisation   char(10)        not null,
+Description      char(10)         not null,
+Photo          	 integer         not null,
+Sol				  char(20)        not null,
+Temperature     char(20)        not null,
+id_Utilisateur   integer         not null,
+constraint pk_plante primary key(id_plante)
+constraint fk_plante foreign key(id_utilisateur)
+references Utilisateur(id_Utilisateur)
+)
+;
+
+create table Entretien
+(
+Id_Entretien 		integer		not null,
+Témparature_Optimal integer	    not null,
+Luminiosité 		integer 	not null,
+Date_Entretien      date        not null,
+Humidite            integer     not null,
+Id_Plante int null,
+constraint Pk_Entretien primary key(Id_Entretien), 
+constraint fk_Entretien_Plante foreign key(Id_Plante) references Plante(Id_Plante)
+);
+
+--insérer les plantes
+
+insert into Plante values(1,'Houx','Strate arboree','médicinale_mellifère_ebenisterie',,'argilosableux ou sablocaillouteux','Ombre');
+insert into Plante values(2,'Pommier sauvage','Strate arboree','médicinale_mellifère_ébénisterie',,'Non specifique','indifferente');
+insert into Plante values(3,'Néflier d'Allemangne','Strate arboree','medicinale_comestible_artisant',,'Non spécifique','indifferente');
+insert into Plante values(4,'Peuplier Tremble','Strate arboree','médicinale_pâte à
+papier',,'Non spécifique','très ensoleillee');
+insert into Plante values(5,'Mérisier','Strate arboree','medicinale_comestible_ebenisterie',,'Non specifique','Indifferente');
+insert into Plante values(6,'Céerisier de sainte_lucie','Strate arboree','Artisanat',,'Non specifique','tres ensoleillee');
+insert into Plante values(7,'Prunellier','Strate arboree','comestible',,'Riche en element nutritifs','moyennement ensoleillee');
+insert into Plante values(8,'Chêne sessile','Strate arboree','medicinale',,'Draimant','Indifferente');
+insert into Plante values(9,'Chêne pubescent','Strate arboree','medicinale_bois de ebenisterie',,'Caillouteux_rocheux','tres ensoleillee');
+insert into Plante values(10,'Chêne pédonculé','Strate arboree','medicinale_menuiserie_ebenisterie',,'Drainant','tres ensoleillee');
+insert into Plante values(11,'Saule marsault','Strate arboree','medicinale_mellifere_vannerie_tinctoriale',,'Non specifique','tres ensoleillee');
+insert into Plante values(12,'Alisier blanc','Strate arboree','medicinale_artisanat',,'Non specifique','tres ensoleillee');
+insert into Plante values(13,'Sorbier des oiseleurs','Strate arbore','medicinal_ebenisterie_artisanat',,'Non specifique','moyennement ensoleillee');
+insert into Plante values(14,'Alisier de Fontainebleau','Strate arboree','medicinale_artisanat',,'Non specifique',tres ensoleillee);
+insert into Plante values(15,'Alisier torminal','Strate arboree','medicinale_artisanat',,'Non specifique','Moyennement ensoleillee');
+insert into Plante values(16,'Tilleul à pétite feuilles','Strate arboree','mellifere_medicinale_artisanat_ebenisterie',,'Non specifique','Indifferente');
+insert into Plante values(17,'tilleul à grande feuilles','Strate arboree','mellifere_medicinale_artisanat_ebenisterie',,'Non specifique','peu ensoleillee');
+insert into Plante values(18,'Amélanchier','Strate Arbustive','baies',,'Non specifique','tres ensoleillee');
+insert into Plante values(19,'Epine_vinette','Strate Arbustive','Medicinale_baies',,'caillouteux_rocheux','moyennement ensoleilee');
+insert into Plante values(20,'Buis','Strate Arbustive','Medicinale_bois',,'Pierreux','peu ensoleillee');
+insert into Plante values(21,'clematite vigne blanche','Strate Arbustive','Panier',,'Non specifique','Indifferente');
+insert into Plante values(22,'Noisetier','Strate Arbustive','Comestible_marqueterie_vannerie',,'Non specifique','Indifferente');
+insert into Plante values(23,'Aubépine à 2 styles','Strate Arbustive','médicinale_artisanat',,'Non specifique','Indifferente');
+insert into Plante values(24,'Fusain d'Europe','Strate Arbustive','marqueterie_artisanat_tinctoriale',,'Riche en elements nutritifs','Indifferente');
+insert into Plante values(25,'Lierre grimpant','Strate Arbutive','medicinale',,'Non specifique','moyennement ensoleillee');
+insert into Plante values(26,'Troène','Strate Arbustive','mellifere_medicinale_tinctoriale','Non specifique','moyennement ensoleillee');
+insert into Plante values(27,'Chèvrefeuille des bois','Statre Arbustive','medicinale',,'Non specifique','moyennement ensoleille');
+insert into Plante values(28,'Bourdaine','Strate Arbustive','Bois',,'Non specifique','Infferente');
+insert into Plante values(29,'Grosseiller à marqueraux','Strate Arbustive','mellifere_medicinale_comestible',,'Riche en element nutritifs','Indiferente');
+insert into Plante values(30,'Rosier des champs','Strate Arbustive','horticulture(hybrides)',,'Non specifique','Indifferente');
+
+--insérer les entretiens
+insert into entretien values(1,20,30,SYSDATE,32,1);
+insert into entretien values(2,18,30,SYSDATE,30,2);
+insert into entretien values(3,20,28,SYSDATE,29,3);
+insert into entretien values(4,35,29,SYSDATE,30,4);
+insert into entretien values(5,20,27,SYSDATE,28,5);
+insert into entretien values(6,0,27,SYSDATE,27,6);
+insert into entretien values(7,35,27,SYSDATE,27,7);
+insert into entretien values(8,20,30,SYSDATE,30,8);
+insert into entretien values(9,20,27,SYSDATE,29,9);
+insert into entretien values(10,20,30,SYSDATE,30,10);
+insert into entretien values(11,20,30,SYSDATE,30,11);
+insert into entretien values(12,2,30,SYSDATE,29,12);
+insert into entretien values(13,21,29,SYSDATE,28,13);
+insert into entretien values(14,-40,10,SYSDATE,0,14);
+insert into entretien values(15,5,29,SYSDATE,28,15);
+insert into entretien values(16,40,30,SYSDATE,30,16);
+insert into entretien values(17,20,29,SYSDATE,29,17);
+insert into entretien values(18,20,30,SYSDATE,36,18);
+insert into entretien values(19,20,20,SYSDATE,21,19);
+insert into entretien values(20,-10,20,SYSDATE,-28,20);
+insert into entretien values(21,-28,31,SYSDATE,30,21);
+insert into entretien values(22,-40,31,SYSDATE,30,22);
+insert into entretien values(23,20,28,SYSDATE,20,23);
+insert into entretien values(24,20,29,SYSDATE,30,24);
+insert into entretien values(25,20,25,SYSDATE,30,25);
+insert into entretien values(26,18,20,SYSDATE,30,26);
+insert into entretien values(27,19,15,SYSDATE,20,27);
+insert into entretien values(28,20,30,SYSDATE,30,28);
+insert into entretien values(29,-40,15,SYSDATE,-30,29);
+insert into entretien values(30,-32,20,SYSDATE,-32,30);
+
+--insert les utilisateur
+
+insert into Utilisateur values(1, 'Keita', 'Tiemoko',Mali);
+insert into Utilisateur values(2, 'Legras', 'Pierre',France);
+insert into Utilisateur values(2, 'Seguin', 'Thomas',France);
+
+
+
+
+set linesize 1000;
+set pagesize 200;
+select * from utilisateur;
+select * from plante order by 1;
+select * from entretien order by 1;
+commit;
+
+
+
+
+
+
+
+
+
+
+
+
+
