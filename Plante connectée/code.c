@@ -167,31 +167,31 @@ void PrintMenu()
     printf("2. Pommier Sauvage \n");
     printf("3.  Neflier Allemand \n");
     printf("4.  Peuplier Tremble \n");
-    printf("5.  Mérisier\n");
+    printf("5.  MÃ©risier\n");
     printf("6.  Cerisier de Sainte-Lucie\n");
     printf("7.  Prunellier\n");
-    printf("8.  Chêne sessile \n");
-    printf("9.  Chêne pubescent\n");
-    printf("10.  Chêne pédonculé\n");
+    printf("8.  ChÃªne sessile \n");
+    printf("9.  ChÃªne pubescent\n");
+    printf("10.  ChÃªne pÃ©donculÃ©\n");
     printf("11.  Saule marsault \n");
     printf("12.  Alisier blanc \n");
     printf("13.  Sorbier des oiseleurs\n");
     printf("14.  Alisier de Fontainebleau\n");
     printf("15.  Alisier torminal\n");
-    printf("16.  Tilleul à petites feuilles \n");
-    printf("17. Tilleul à grandes feuilles \n");
-    printf("18. Amélanchier \n");
+    printf("16.  Tilleul Ã  petites feuilles \n");
+    printf("17. Tilleul Ã  grandes feuilles \n");
+    printf("18. AmÃ©lanchier \n");
     printf("19. Epine-vinette \n");
     printf("20.  Buis \n");
     printf("21.  Clematite vigne blanche\n");
     printf("22.  Noisetier\n");
-    printf("23.  Aubépine à 2 styles\n");
+    printf("23.  AubÃ©pine Ã  2 styles\n");
     printf("24.  Fusain d'Europe \n");
     printf("25.  Lierre grimpant\n");
-    printf("26.  Troène\n");
-    printf("27.  Chèvrefeuille des bois\n");
+    printf("26.  TroÃ¨ne\n");
+    printf("27.  ChÃ¨vrefeuille des bois\n");
     printf("28.  Bourdaine \n");
-    printf("29.  Grosseiller à marqueraux\n");
+    printf("29.  Grosseiller Ã  marqueraux\n");
     printf("30.  Rosier des champs\n");
     printf(">");
     color(15,0);
@@ -210,16 +210,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinale, marqueterie, artisanat\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinale, marqueterie, artisanat\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
+     else if (A == 4)
         printf("argilosableux ou sablocaillouteux\n\n");
-     else if (A = 5)
-        printf("indifférente\n\n");
+     else if (A == 5)
+        printf("indiffÃ©rente\n\n");
     sleep(500);
      printf("voulez vous voir les autres caracteristique?\n\n");
      int B;
@@ -245,16 +245,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinale, mellifère,ébénisterie\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinale, mellifÃ¨re,Ã©bÃ©nisterie\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("indifférente\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("indiffÃ©rente\n\n");
      PrintMenu();
  }
 
@@ -268,16 +268,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinale, comestible,artisanat\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinale, comestible,artisanat\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("indifférente\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("indiffÃ©rente\n\n");
      PrintMenu();
  }
 
@@ -291,16 +291,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinale, pâte à papier\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinale, pÃ¢te Ã  papier\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("très ensoleillée\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("trÃ¨s ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -314,16 +314,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinale, comestible, ébénisterie\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinale, comestible, Ã©bÃ©nisterie\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("indifférente\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("indiffÃ©rente\n\n");
      PrintMenu();
  }
 
@@ -337,16 +337,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
         printf("artisanat\n\n");
-     else if (A = 3)
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("très ensoleillée\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("trÃ¨s ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -360,16 +360,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
         printf("comestible\n\n");
-     else if (A = 3)
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("riche en éléments nutritifs\n\n");
-     else if (A = 5)
-        printf("moyennement ensoleillée\n\n ");
+     else if (A == 4)
+        printf("riche en Ã©lÃ©ments nutritifs\n\n");
+     else if (A == 5)
+        printf("moyennement ensoleillÃ©e\n\n ");
      PrintMenu();
  }
 
@@ -383,16 +383,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinale\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinale\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
+     else if (A == 4)
         printf("drainant\n\n");
-     else if (A = 5)
-        printf("indifférente\n\n");
+     else if (A == 5)
+        printf("indiffÃ©rente\n\n");
      PrintMenu();
  }
 
@@ -406,16 +406,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinale, bois de charpente\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinale, bois de charpente\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
+     else if (A == 4)
         printf("caillouteux, rocheux\n\n");
-     else if (A = 5)
-        printf("très ensoleillée\n\n");
+     else if (A == 5)
+        printf("trÃ¨s ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -429,16 +429,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinale, menuiserie, ébénisterie\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinale, menuiserie, Ã©bÃ©nisterie\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
+     else if (A == 4)
         printf("drainant\n\n");
-     else if (A = 5)
-        printf("très ensoleillée\n\n");
+     else if (A == 5)
+        printf("trÃ¨s ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -452,16 +452,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinale, mellifère, vannerie, tinctoriale\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinale, mellifÃ¨re, vannerie, tinctoriale\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("très ensoleillée\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("trÃ¨s ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -475,16 +475,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinale, artisanat\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinale, artisanat\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("très ensoleillée\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("trÃ¨s ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -498,16 +498,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinale, ébénisterie artisanat\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinale, Ã©bÃ©nisterie artisanat\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("moyennement ensoleillée ");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("moyennement ensoleillÃ©e ");
      PrintMenu();
  }
 
@@ -521,16 +521,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinale, artisanat\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinale, artisanat\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("très ensoleillée\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("trÃ¨s ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -544,16 +544,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("médicinal, artisanat\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mÃ©dicinal, artisanat\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("moyennement ensoleillée\n\n ");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("moyennement ensoleillÃ©e\n\n ");
      PrintMenu();
  }
 
@@ -568,16 +568,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("mellifère, médicinale, artisanat, ébénisterie");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mellifÃ¨re, mÃ©dicinale, artisanat, Ã©bÃ©nisterie");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("indifférente\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("indiffÃ©rente\n\n");
      PrintMenu();
  }
 
@@ -591,16 +591,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
-        printf("Strate arborée\n\n");
-     else if (A = 2)
-        printf("mellifère, médicinale, artisanat, ébénisterie\n\n");
-     else if (A = 3)
+     if (A == 1)
+        printf("Strate arborÃ©e\n\n");
+     else if (A == 2)
+        printf("mellifÃ¨re, mÃ©dicinale, artisanat, Ã©bÃ©nisterie\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("peu ensoleillée\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("peu ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -614,16 +614,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
+     else if (A == 2)
         printf("baies\n\n");
-     else if (A = 3)
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("très ensoleillée\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("trÃ¨s ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -637,16 +637,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
-        printf("médicinale, baies\n\n");
-     else if (A = 3)
+     else if (A == 2)
+        printf("mÃ©dicinale, baies\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
+     else if (A == 4)
         printf("caillouteux, rocheux\n\n");
-     else if (A = 5)
-        printf("moyennement ensoleillée \n\n");
+     else if (A == 5)
+        printf("moyennement ensoleillÃ©e \n\n");
      PrintMenu();
  }
 
@@ -660,16 +660,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
-        printf("médicinale, bois\n\n");
-     else if (A = 3)
+     else if (A == 2)
+        printf("mÃ©dicinale, bois\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
+     else if (A == 4)
         printf("pierreux\n\n");
-     else if (A = 5)
-        printf("peu ensoleillée\n\n");
+     else if (A == 5)
+        printf("peu ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -684,16 +684,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
+     else if (A == 2)
         printf("paniers\n\n");
-     else if (A = 3)
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("indifférente\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("indiffÃ©rente\n\n");
      PrintMenu();
  }
 
@@ -707,16 +707,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
+     else if (A == 2)
         printf("comestible, marqueterie, vannerie\n\n");
-     else if (A = 3)
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("indifférente\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("indiffÃ©rente\n\n");
      PrintMenu();
  }
 
@@ -730,16 +730,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
-        printf("médicinale, artisanat\n\n");
-     else if (A = 3)
+     else if (A == 2)
+        printf("mÃ©dicinale, artisanat\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("indifférente\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("indiffÃ©rente\n\n");
  }
 
  void FusainEurope()
@@ -752,16 +752,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
+     else if (A == 2)
         printf("marqueterie, artisanat, tinctoriale\n\n");
-     else if (A = 3)
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("riche en éléments nutritifs\n\n");
-     else if (A = 5)
-        printf("moyennement ensoleillée\n\n");
+     else if (A == 4)
+        printf("riche en Ã©lÃ©ments nutritifs\n\n");
+     else if (A == 5)
+        printf("moyennement ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -775,16 +775,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
-        printf("médicinale\n\n");
-     else if (A = 3)
+     else if (A == 2)
+        printf("mÃ©dicinale\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("moyennement ensoleillée\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("moyennement ensoleillÃ©e\n\n");
      PrintMenu();
 
  }
@@ -799,16 +799,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
-        printf("mellifère, médicinale, tinctoriale\n\n");
-     else if (A = 3)
+     else if (A == 2)
+        printf("mellifÃ¨re, mÃ©dicinale, tinctoriale\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("moyennement ensoleillée\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("moyennement ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -822,16 +822,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
-        printf("médicinale\n\n");
-     else if (A = 3)
+     else if (A == 2)
+        printf("mÃ©dicinale\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("moyennement ensoleillée\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("moyennement ensoleillÃ©e\n\n");
      PrintMenu();
  }
 
@@ -845,16 +845,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
+     else if (A == 2)
         printf("bois\n\n");
-     else if (A = 3)
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("indifférente\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("indiffÃ©rente\n\n");
      PrintMenu();
  }
 
@@ -868,16 +868,16 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
-        printf("mellifère, comestible, médicinale\n\n");
-     else if (A = 3)
+     else if (A == 2)
+        printf("mellifÃ¨re, comestible, mÃ©dicinale\n\n");
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("riche en éléments nutritifs\n\n");
-     else if (A = 5)
-        printf("indifférente\n\n");
+     else if (A == 4)
+        printf("riche en Ã©lÃ©ments nutritifs\n\n");
+     else if (A == 5)
+        printf("indiffÃ©rente\n\n");
      PrintMenu();
  }
 
@@ -892,15 +892,15 @@ void PrintMenu()
      printf(">");
      int A;
      scanf("%d", &A);
-     if (A = 1)
+     if (A == 1)
         printf("Strate Arbustive\n\n");
-     else if (A = 2)
+     else if (A == 2)
         printf("horticulture, hybrides\n\n");
-     else if (A = 3)
+     else if (A == 3)
         printf("");
-     else if (A = 4)
-        printf("non spécifique\n\n");
-     else if (A = 5)
-        printf("indifférente\n\n");
+     else if (A == 4)
+        printf("non spÃ©cifique\n\n");
+     else if (A == 5)
+        printf("indiffÃ©rente\n\n");
      PrintMenu();
  }
