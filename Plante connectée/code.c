@@ -225,10 +225,10 @@ void PrintMenu()
      int B;
      scanf("%d", &B);
      printf("1. OUI\n 2. NON\n");
-     if (B = 1)
+     if (B == 1)
         sleep(500);
         Houx();
-     if (B = 2)
+     if (B == 2)
         printf("vous allez etre diriger vers le menu principale.");
         sleep(500);
         PrintMenu();
