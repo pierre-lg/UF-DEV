@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1561389538 source:c:\users\mme keita\desktop\ynov\uf dev plante connecter\main.c
+	<stdio.h>
+	<stdlib.h>
+	"code.h"
+	<winsock.h>
+	<windows.h>
+	<time.h>
+	<mysql.h>
+
+1561381430 c:\users\mme keita\desktop\ynov\uf dev plante connecter\code.h
+
+1561401426 source:c:\users\mme keita\desktop\ynov\uf dev plante connecter\code.c
+	<stdio.h>
+	<unistd.h>
+	<stdlib.h>
+	<windows.h>
+	<mysql.h>
+
